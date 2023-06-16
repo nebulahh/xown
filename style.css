@@ -10,6 +10,10 @@ html, body {
   color: #6066e0;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .content {
   padding: 1rem;
   padding-left: 2rem;
