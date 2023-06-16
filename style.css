@@ -453,8 +453,6 @@ display: flex;
 gap: .5rem;
 }
 
-
-
 .chat {
   background-color: #eef0ff;
   padding: .5rem;
@@ -532,7 +530,7 @@ justify-content: center;
 }
 
 .article2 .illustration {
-  width: 4rem;
+  width: 3rem;
 }
 
 .chat-container {
