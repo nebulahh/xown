@@ -414,7 +414,6 @@ gap: 20px;
 
 .article1 {
   display: flex;
-    border: 1px solid;
     background-color: #eef0ff;
     flex: 1;
   border-radius: 15px;
@@ -492,6 +491,16 @@ width: 100%;
 
 .section-header {
   margin-bottom: .5rem;
+  display: flex;
+  gap: 10px;
+}
+
+.section-header {
+  color: black;
+}
+
+.section-header > b {
+  color: #5861e9;
 }
 
 .teacher-avatar .name {
@@ -625,6 +634,10 @@ gap: 20px;
   align-items: center;
   justify-content: space-between;
   margin-bottom: .5rem;
+}
+
+.teacher-nav > p {
+  color: black;
 }
 
 .teachers li {
