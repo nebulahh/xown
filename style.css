@@ -403,6 +403,7 @@ main {
 display: flex;
 gap: 20px;
 flex: 2;
+border: 1px solid;
 }
 
 .article-content {
