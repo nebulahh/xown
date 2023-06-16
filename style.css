@@ -402,8 +402,7 @@ main {
 .article-container {
 display: flex;
 gap: 30px;
-flex: 2;
-border: 1px solid;
+flex: 1;
 }
 
 .article-content {
