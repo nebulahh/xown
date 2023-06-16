@@ -752,4 +752,13 @@ button, [role="button"] {
   .video, .article {
     width: auto;
   }
+
+  .nav-container {
+    padding-left: 1rem;
+padding-right: 1rem;
+  }
+
+  .logo {
+    padding: 0;
+  }
 }
