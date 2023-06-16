@@ -522,6 +522,9 @@ width: 100%;
   background-color: #eef0ff;
   border-radius: 15px;
   padding: 10px;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .article1 .illustration {
 width: 7rem;
