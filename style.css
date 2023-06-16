@@ -39,6 +39,10 @@ body {
   width: 100%;
 }
 
+.username {
+  color: black;
+}
+
 @media (min-width: 640px) {
   .nav {
     width: 11rem;
