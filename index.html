@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Challenge</title>
+</head>
+
+<body>
+  <div class="top-nav">
+    <div class="nav-container">
+      <div class="logo">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+          style="fill: rgba(208, 218, 38, 1);transform: msFilter;">
+          <path
+            d="M6.993 12c0 2.761 2.246 5.007 5.007 5.007s5.007-2.246 5.007-5.007S14.761 6.993 12 6.993 6.993 9.239 6.993 12zM12 8.993c1.658 0 3.007 1.349 3.007 3.007S13.658 15.007 12 15.007 8.993 13.658 8.993 12 10.342 8.993 12 8.993zM10.998 19h2v3h-2zm0-17h2v3h-2zm-9 9h3v2h-3zm17 0h3v2h-3zM4.219 18.363l2.12-2.122 1.415 1.414-2.12 2.122zM16.24 6.344l2.122-2.122 1.414 1.414-2.122 2.122zM6.342 7.759 4.22 5.637l1.415-1.414 2.12 2.122zm13.434 10.605-1.414 1.414-2.122-2.122 1.414-1.414z">
+          </path>
+        </svg>
+
+        <p>LearningLight</p>
+      </div>
+      <div class="activity">
+        <div class="search">
+          <form><svg xmlns="http://www.w3.org/2000/svg" class="svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg><input class="w-full outline-none appearance-none placeholder-gray-500 text-gray-500 sm:w-auto"
+              type="text" placeholder="Search"></form>
+        </div>
+        <div class="profile-container">
+          <div class="profile">
+            <div class="alert">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA/ElEQVRIS2NkoDFgpLH5DKRYkAB0TD/UQYVAegExjiPGAgGgQflAXADEIDYIfADiCUA8EcrGaRchC2CuhhmMbhDIIry+wWcByPD5xAQDUE0iriDDZYECUMN5pCAhZA/IJ4ZA/ABdIS4LGoAK6wmZiibfCOSD9KEAXBZcAKrSJ9ECkB6QL4iy4D+JhsOUYzgYlw9GLYCH8IAEESjXviczkgWB+kB5AqcPQIbvB2IDMi0AJVVHZEvQg4ic9I/uFpT8gG4BuckTZ/6ihQ8uIgcxoeKazKjAHcm4DGwASqAXflgLN2LLImwWgWqwBKjEAiANquEIgkETRARdiksBAHCzJRlgsK59AAAAAElFTkSuQmCC" />
+            </div>
+            <div class="avatar">
+              <div class="img">
+                <img src="https://randomuser.me/api/portraits/women/79.jpg" />
+              </div>
+              <div class="name">
+                <span class="block">Nikita andrew</span>
+              </div>
+            </div>
+
+          </div>
+          <div class="btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex">
+    <div class="sidebar">
+      <nav class="nav">
+
+        <div class="li-container">
+          <ul class="li-container__child">
+            <li>
+              <a href="#">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    style="fill: #5861e9;transform: msFilter;">
+                    <path
+                      d="m21.743 12.331-9-10c-.379-.422-1.107-.422-1.486 0l-9 10a.998.998 0 0 0-.17 1.076c.16.361.518.593.913.593h2v7a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4h4v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-7h2a.998.998 0 0 0 .743-1.669z">
+                    </path>
+                  </svg>
+                </div>
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="nav-img">
+                  <img src="edu.png" alt="...">
+                </div>
+                Courses
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1);transform: msFilter;">
+                    <path
+                      d="M9 20h6v2H9zm7.906-6.288C17.936 12.506 19 11.259 19 9c0-3.859-3.141-7-7-7S5 5.141 5 9c0 2.285 1.067 3.528 2.101 4.73.358.418.729.851 1.084 1.349.144.206.38.996.591 1.921h-.792v2h8.032v-2h-.79c.213-.927.45-1.719.593-1.925.352-.503.726-.94 1.087-1.363z">
+                    </path>
+                  </svg>
+                </div>
+                Training
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1);transform: msFilter;">
+                    <path
+                      d="M20 12a2 2 0 0 0-.703.133l-2.398-1.963c.059-.214.101-.436.101-.67C17 8.114 15.886 7 14.5 7S12 8.114 12 9.5c0 .396.1.765.262 1.097l-2.909 3.438A2.06 2.06 0 0 0 9 14c-.179 0-.348.03-.512.074l-2.563-2.563C5.97 11.348 6 11.179 6 11c0-1.108-.892-2-2-2s-2 .892-2 2 .892 2 2 2c.179 0 .348-.03.512-.074l2.563 2.563A1.906 1.906 0 0 0 7 16c0 1.108.892 2 2 2s2-.892 2-2c0-.237-.048-.46-.123-.671l2.913-3.442c.227.066.462.113.71.113a2.48 2.48 0 0 0 1.133-.281l2.399 1.963A2.077 2.077 0 0 0 18 14c0 1.108.892 2 2 2s2-.892 2-2-.892-2-2-2z">
+                    </path>
+                  </svg>
+                </div>
+                Statistics
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1);transform: msFilter;">
+                    <path
+                      d="M12 16c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.084 0 2 .916 2 2s-.916 2-2 2-2-.916-2-2 .916-2 2-2z">
+                    </path>
+                    <path
+                      d="m2.845 16.136 1 1.73c.531.917 1.809 1.261 2.73.73l.529-.306A8.1 8.1 0 0 0 9 19.402V20c0 1.103.897 2 2 2h2c1.103 0 2-.897 2-2v-.598a8.132 8.132 0 0 0 1.896-1.111l.529.306c.923.53 2.198.188 2.731-.731l.999-1.729a2.001 2.001 0 0 0-.731-2.732l-.505-.292a7.718 7.718 0 0 0 0-2.224l.505-.292a2.002 2.002 0 0 0 .731-2.732l-.999-1.729c-.531-.92-1.808-1.265-2.731-.732l-.529.306A8.1 8.1 0 0 0 15 4.598V4c0-1.103-.897-2-2-2h-2c-1.103 0-2 .897-2 2v.598a8.132 8.132 0 0 0-1.896 1.111l-.529-.306c-.924-.531-2.2-.187-2.731.732l-.999 1.729a2.001 2.001 0 0 0 .731 2.732l.505.292a7.683 7.683 0 0 0 0 2.223l-.505.292a2.003 2.003 0 0 0-.731 2.733zm3.326-2.758A5.703 5.703 0 0 1 6 12c0-.462.058-.926.17-1.378a.999.999 0 0 0-.47-1.108l-1.123-.65.998-1.729 1.145.662a.997.997 0 0 0 1.188-.142 6.071 6.071 0 0 1 2.384-1.399A1 1 0 0 0 11 5.3V4h2v1.3a1 1 0 0 0 .708.956 6.083 6.083 0 0 1 2.384 1.399.999.999 0 0 0 1.188.142l1.144-.661 1 1.729-1.124.649a1 1 0 0 0-.47 1.108c.112.452.17.916.17 1.378 0 .461-.058.925-.171 1.378a1 1 0 0 0 .471 1.108l1.123.649-.998 1.729-1.145-.661a.996.996 0 0 0-1.188.142 6.071 6.071 0 0 1-2.384 1.399A1 1 0 0 0 13 18.7l.002 1.3H11v-1.3a1 1 0 0 0-.708-.956 6.083 6.083 0 0 1-2.384-1.399.992.992 0 0 0-1.188-.141l-1.144.662-1-1.729 1.124-.651a1 1 0 0 0 .471-1.108z">
+                    </path>
+                  </svg>
+                </div>
+                Settings
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="hw-container">
+          <div class="hw-nav">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                style="fill: #5861e9;transform: msFilter;">
+                <path
+                  d="M6.012 18H21V4a2 2 0 0 0-2-2H6c-1.206 0-3 .799-3 3v14c0 2.201 1.794 3 3 3h15v-2H6.012C5.55 19.988 5 19.805 5 19s.55-.988 1.012-1zM8 6h9v2H8V6z">
+                </path>
+              </svg>
+              <p>Homework</p>
+            </div>
+            <p> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                style="fill: #5861e9;transform: msFilter;">
+                <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+              </svg> </p>
+          </div>
+
+          <div class="stats">
+            <p>Basics of Composition</p>
+            <div class="range">
+              <progress aria-labelledby="p01e-label" id="p01e" max="100" value="80">
+                25%</progress>
+            </div>
+            <div class="progress">
+              <p>4/5</p>
+              <p>80%</p>
+            </div>
+          </div>
+
+          <div class="stats">
+            <p>Basics of Composition</p>
+            <div class="range">
+              <progress aria-labelledby="p01e-label" id="p01e" max="100" value="60">
+                25%</progress>
+            </div>
+            <div class="progress">
+              <p>3/5</p>
+              <p>60%</p>
+            </div>
+          </div>
+          <div class="stats">
+            <p>Basics of Composition</p>
+            <div class="range">
+              <progress aria-labelledby="p01e-label" id="p01e" max="100" value="40">
+                25%</progress>
+            </div>
+            <div class="progress">
+              <p>2/5</p>
+              <p>40%</p>
+            </div>
+          </div>
+          <div class="stats">
+            <p>Basics of Composition</p>
+            <div class="range">
+              <progress aria-labelledby="p01e-label" id="p01e" max="100" value="60">
+                25%</progress>
+            </div>
+            <div class="progress">
+              <p>3/5</p>
+              <p>60%</p>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <main class="content">
+
+      <div class="tabs">
+        <ul>
+          <li>
+            <button type="button" class="active">
+              English
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              Product
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              UX/UI Design
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              Photography
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              Time Management
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              Development
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              Graphic Design
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              History of England
+            </button>
+          </li>
+        </ul>
+
+      </div>
+      <div class="top-row">
+        <div class="article">
+          <div>
+            <p>Articles</p>
+            <span>162</span>
+          </div>
+
+          <div class="article-container">
+            <section class="article1">
+              <div class="text">
+                <div>
+                  <p>Inclusive Design</p>
+                  <p>Principles</p>
+                </div>
+
+                <div class="time">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1);transform: msFilter;">
+                    <path
+                      d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm3.293 14.707L11 12.414V6h2v5.586l3.707 3.707-1.414 1.414z">
+                    </path>
+                  </svg>
+                  <p>5 min</p>
+                </div>
+                <div class="teacher-avatar">
+                  <div class="img">
+                    <img src="https://randomuser.me/api/portraits/men/23.jpg" />
+                  </div>
+                  <div class="name">
+                    <p class="block">Nikita andrew</p>
+                    <p class="block">Feb 11</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="illustration">
+
+                <img src="book.png" alt="...">
+              </div>
+
+            </section>
+
+            <section class="article2">
+              <p>Design Trends</p>
+              <p>in 2020</p>
+              <div class="row">
+                <div class="time">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1);transform: msFilter;">
+                    <path
+                      d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm3.293 14.707L11 12.414V6h2v5.586l3.707 3.707-1.414 1.414z">
+                    </path>
+                  </svg>
+                  <p>5 min</p>
+                </div>
+                <div class="illustration">
+                  <div>
+                    <img src="book.png" alt="...">
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="teacher-avatar">
+                <div class="img">
+                  <img src="https://randomuser.me/api/portraits/men/74.jpg" />
+                </div>
+                <div class="name">
+                  <p class="block">Nikita andrew</p>
+                  <p class="block">Feb 4</p>
+
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="chat-container">
+          <div>
+            <p class="chat-text">Theme Chats</p>
+            <span>24</span>
+          </div>
+          <div class="chats">
+            <div class="chat-top">
+              <section class="chat">
+                <div class="illustration">
+                  <img src="read.png" alt="...">
+                </div>
+                <p>Education</p>
+              </section>
+              <section class="chat">
+                <div class="illustration">
+                  <img src="read.png" alt="...">
+                </div>
+                <p>Education</p>
+              </section>
+            </div>
+            <div class="chat-bottom">
+              <section class="chat">
+                <div class="illustration">
+                  <img src="read.png" alt="...">
+                </div>
+                <p>Education</p>
+              </section>
+              <section class="chat">
+                <div class="illustration">
+                  <img src="read.png" alt="...">
+                </div>
+                <p>Education</p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-row">
+        <div class="video">
+          <p class="section-header">Video Lessons 124</p>
+          <div class="video-container">
+            <div class="big">
+              <div>
+                <p>We create effective</p>
+                <p>texts for landing</p>
+              </div>
+
+              <div class="vid-row">
+                <div class="teacher-avatar">
+                  <div class="img">
+                    <img src="https://randomuser.me/api/portraits/women/45.jpg" />
+                  </div>
+                  <div class="name">
+                    <p class="block">Nikita andrew</p>
+                    <p class="block">Feb 4</p>
+
+                  </div>
+                </div>
+
+                <p class="vid-time">
+                  10:08
+                </p>
+              </div>
+            </div>
+            <div class="stack">
+              <div class="stack-child">
+                <p>We create effective</p>
+                <p>texts for landing</p>
+
+                <div class="teacher-avatar">
+                  <div class="img">
+                    <img src="https://randomuser.me/api/portraits/women/98.jpg" />
+                  </div>
+                  <div class="name">
+                    <p class="block">Nikita andrew</p>
+                    <p class="block">Feb 4</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="stack-child">
+                <p>We create effective</p>
+                <p>texts for landing</p>
+
+                <div class="teacher-avatar">
+                  <div class="img">
+                    <img src="https://randomuser.me/api/portraits/women/43.jpg" />
+                  </div>
+                  <div class="name">
+                    <p class="block">Nikita andrew</p>
+                    <p class="block">Feb 4</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="teachers">
+          <div class="teacher-nav">
+            <p>Top Teachers</p>
+
+            <p> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+              </svg> </p>
+          </div>
+          <ul>
+            <li>
+              <div class="teacher-avatar">
+                <div class="img">
+                  <img src="https://randomuser.me/api/portraits/women/21.jpg" />
+                </div>
+                <div class="name">
+                  <p class="block">Nikita andrew</p>
+                  <p class="block">5 years experience</p>
+
+                </div>
+              </div>
+              <p>5.0</p>
+            </li>
+            <li>
+              <div class="teacher-avatar">
+                <div class="img">
+                  <img src="https://randomuser.me/api/portraits/men/80.jpg" />
+                </div>
+                <div class="name">
+                  <p class="block">Nikita andrew</p>
+                  <p class="block">5 years experience</p>
+
+                </div>
+              </div>
+              <p>5.0</p>
+            </li>
+            <li>
+              <div class="teacher-avatar">
+                <div class="img">
+                  <img src="https://randomuser.me/api/portraits/women/78.jpg" />
+                </div>
+                <div class="name">
+                  <p class="block">Nikita andrew</p>
+                  <p class="block">5 years experience</p>
+
+                </div>
+              </div>
+              <p>5.0</p>
+            </li>
+            <li>
+              <div class="teacher-avatar">
+                <div class="img">
+                  <img src="https://randomuser.me/api/portraits/men/79.jpg" />
+                </div>
+                <div class="name">
+                  <p class="block">Nikita andrew</p>
+                  <p class="block">5 years experience</p>
+
+                </div>
+              </div>
+              <p>5.0</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+</body>
+
+</html>
