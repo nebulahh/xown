@@ -546,6 +546,7 @@ margin: 0 auto;
 .row {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 /* bottom row */
